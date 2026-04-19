@@ -9,7 +9,27 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Mail Carrier.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Mail Carrier" startnode="24" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="839A8E81-988A-4049-93B0-CADA8230C4BB" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Town" tags="" position="600,1600" size="100,100">&#39;&#39;Town&#39;&#39;
+<tw-storydata name="Mail Carrier" startnode="21" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="839A8E81-988A-4049-93B0-CADA8230C4BB" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Text and links */
+tw-passage {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5); /* or your chosen transparency */
+  border-radius: 8px;
+  min-height: 100vh; /* Fill full viewport height */
+  padding: 2em;
+}
+
+tw-link {
+  color: black;
+}
+
+tw-story tw-link:hover {
+  color: darkred !important;
+}
+
+tw-link.visited {
+  color: black !important;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Town" tags="" position="600,1600" size="100,100">&#39;&#39;Town&#39;&#39;
 
 Starting zone of the game. Home of the Mayor and Bird Boss.
 
@@ -50,7 +70,7 @@ Locations:
 
 Missions:
 
-[[Mission1 -&gt; Forest]]
+[[Mission1: Forest -&gt; Mission1]]
 [[Mission2]]
 [[Mission3]]
 
@@ -60,7 +80,9 @@ Navigation:
 
 [[Mountain]]
 [[Underground]] 
-[[Welcome!]] </tw-passagedata><tw-passagedata pid="2" name="Underground" tags="" position="1800,1600" size="100,100">&#39;&#39;Underground&#39;&#39;
+[[Welcome!]] 
+
+[[Start-&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="2" name="Underground" tags="" position="1800,1600" size="100,100">&#39;&#39;Underground&#39;&#39;
 
 Final zone of the game. Home of the Mole Man.
 
@@ -77,9 +99,7 @@ Characters:
 Missions
 
 [[Mission7]]
-
 [[Mission8]]
-
 [[Mission9]]
 
 ========
@@ -87,10 +107,11 @@ Missions
 Navigation:
 
 [[Town]]
-
 [[Mountain]] 
-
 [[Welcome!]] 
+
+
+[[Start-&gt;Welcome!]] 
 
 
 
@@ -113,9 +134,7 @@ Characters:
 Missions:
 
 [[Mission4]]
-
 [[Mission5]]
-
 [[Mission6]]
 
 ========
@@ -123,26 +142,27 @@ Missions:
 Navigation:
 
 [[Underground]]
-
 [[Town]]
-
 [[Welcome!]] 
-</tw-passagedata><tw-passagedata pid="4" name="Mission2" tags="" position="600,1800" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Mission3" tags="" position="800,1800" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="Mission4" tags="" position="1000,1800" size="100,100"></tw-passagedata><tw-passagedata pid="7" name="Mission5" tags="" position="1200,1800" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="Mission6" tags="" position="1400,1800" size="100,100"></tw-passagedata><tw-passagedata pid="9" name=" Forest" tags="" position="400,1800" size="100,100">[[Town]] </tw-passagedata><tw-passagedata pid="10" name="Post Office" tags="" position="400,1400" size="100,100">Boss Bird is here. 
+
+
+[[Start-&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="4" name="Mission4" tags="" position="1000,1800" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Mission5" tags="" position="1200,1800" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="Mission6" tags="" position="1400,1800" size="100,100"></tw-passagedata><tw-passagedata pid="7" name="Post Office" tags="" position="400,1400" size="100,100">Boss Bird is here. 
+
 
 [[Secretary Desk]]
 [[Closet]]
 
 
-
-[[Town]] </tw-passagedata><tw-passagedata pid="11" name="Closet" tags="" position="200,1300" size="100,100">Your home. Can change clothes here. Can sleep to pass time.
-
+[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="8" name="Closet" tags="" position="200,1300" size="100,100">Your home. Can change clothes here. Can sleep to pass time.
 
 
-[[Post Office]] </tw-passagedata><tw-passagedata pid="12" name="Secretary Desk" tags="" position="200,1400" size="100,100">Post Office Assistant is here.
+[[Return-&gt;Post Office]] </tw-passagedata><tw-passagedata pid="9" name="Secretary Desk" tags="" position="200,1400" size="100,100">Post Office Assistant is here.
 
-[[Post Office]] </tw-passagedata><tw-passagedata pid="13" name="City Hall" tags="" position="400,1300" size="100,100">Mayor lives here. 
 
-[[Town]]</tw-passagedata><tw-passagedata pid="14" name="Mayor" tags="" position="600,1400" size="100,100">&#39;&#39;Mayor&#39;&#39;
+[[Return-&gt;Post Office]] </tw-passagedata><tw-passagedata pid="10" name="City Hall" tags="" position="400,1300" size="100,100">Mayor lives here. 
+
+
+[[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="11" name="Mayor" tags="" position="600,1400" size="100,100">&#39;&#39;Mayor&#39;&#39;
 
 - Doe, compassionate but authoritative
 - Notices a sad vibe in the town, writes to a friend about it
@@ -163,9 +183,10 @@ Navigation:
 - City counsel stamp (sent to partner)
 
 
-[[Town]] </tw-passagedata><tw-passagedata pid="15" name="Stargazer&#39;s House" tags="" position="1000,1400" size="100,100">Stargazer lives here.
+[[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="12" name="Stargazer&#39;s House" tags="" position="1000,1400" size="100,100">Stargazer lives here.
 
-[[Mountain]] </tw-passagedata><tw-passagedata pid="16" name="Stargazer" tags="" position="1200,1400" size="100,100">Stargazer
+
+[[Return-&gt;Mountain]] </tw-passagedata><tw-passagedata pid="13" name="Stargazer" tags="" position="1200,1400" size="100,100">Stargazer
 
 -&gt; Lives at the top of the Mountain
 -&gt; capricorn
@@ -180,8 +201,8 @@ Navigation:
 -&gt; There will be a level where you have to traverse from the highest point to the lowest point (a difficult task)
 
 
-[[Mountain]] 
-</tw-passagedata><tw-passagedata pid="17" name="Mole Man" tags="" position="1800,1400" size="100,100">Mole Man
+[[Return-&gt;Mountain]] 
+</tw-passagedata><tw-passagedata pid="14" name="Mole Man" tags="" position="1800,1400" size="100,100">Mole Man
 
 -&gt; Tutorial character (gives detailed hints on movement after Boss Bird gives the general overview)
 -&gt; Sees the world in the same way you do (highly imaginative)
@@ -195,15 +216,16 @@ Navigation:
 -&gt; Steals letters from the townsfolk and stashes them underground near the source of the magic.
 
 
-[[Underground]] </tw-passagedata><tw-passagedata pid="18" name="Shop" tags="" position="400,1200" size="100,100">Can aquire cosmetics here.
+[[Underground]] </tw-passagedata><tw-passagedata pid="15" name="Shop" tags="" position="400,1200" size="100,100">Can aquire cosmetics here.
 
-[[Town]] </tw-passagedata><tw-passagedata pid="19" name="Boss Bird" tags="" position="600,1200" size="100,100">Boss of the post office. Annoyed that he has to work in a nothingburger town. Short tempered, wants you to work faster. Gets a complaint from the mayor that letters aren&#39;t reaching their destinations. This is a long-standing issue.
 
-[[Town]] </tw-passagedata><tw-passagedata pid="20" name="Post Office Assistant" tags="" position="600,1000" size="100,100">Secretary at the post office. Is a bird.
+[[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="16" name="Boss Bird" tags="" position="600,1300" size="100,100">Boss of the post office. Annoyed that he has to work in a nothingburger town. Short tempered, wants you to work faster. Gets a complaint from the mayor that letters aren&#39;t reaching their destinations. This is a long-standing issue.
 
-[[Town]] </tw-passagedata><tw-passagedata pid="21" name="Official Master of Views" tags="" position="600,1100" size="100,100">Can be encountered throughout the levels looking at the scenery. Offers dialogue about the town or environments. They document the declining magic of the town
+[[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="17" name="Post Office Assistant" tags="" position="600,1100" size="100,100">Secretary at the post office. Is a bird.
 
-[[Town]] </tw-passagedata><tw-passagedata pid="22" name="General Narrative" tags="" position="200,1800" size="100,100">-&gt; You are a relatively new hire mail carrier in a small ex-logging town. 
+[[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="18" name="Official Master of Views" tags="" position="600,1200" size="100,100">Can be encountered throughout the levels looking at the scenery. Offers dialogue about the town or environments. They document the declining magic of the town
+
+[[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="19" name="General Narrative" tags="" position="200,1800" size="100,100">-&gt; You are a relatively new hire mail carrier in a small ex-logging town. 
 -&gt; The vibes of the town are bad. The mayor notices things aren’t like they used to be. People are feeling bad and depressed. 
 -&gt; The boss urges you to try extra hard to get the letters to their destinations. He’s been getting complaints from residents about missing letters.
 -&gt; In the tutorial, the mole man steals your letters (bag?) and alludes to a secret deep underground. He encourages you to use your whimsy, but is presented as somewhat of an aloof antagonist. 
@@ -211,7 +233,10 @@ Navigation:
 -&gt; Eventually, in connecting enough of the townspeople, you are given a letter to deliver to the mountain. Going there, you meet the stargazer, a renowned scientist who retreated from academia to live alone near the town. He’s convinced there’s something strange going on, and compares it to a starry night sky. He thinks the magic is up there, but the mystery still eludes him.
 -&gt; You deliver some letters in the region and learn about the history of the mountains. At some point, time passes to night and the stargazer shows you what he’s talking about. We get an emotional art moment. He gives you a letter to deliver to a friend underground, the mole man. 
 -&gt; Underground, you find the mole man. It turns out he&#39;s been stealing letters for years in an attempt to feed the magic underground. He’s a little strange! He believes he’s doing something that will save the town, but he’s slowly weighing it down by stealing people’s real mail, in turn causing emotional harm to the townspeople and offsetting the positive vibes fed to the magic.
--&gt; In finding him, you convince him to open a pathway to the town, thus restoring the connection of the town with the magic underground and allowing it to be fed naturally by the emotions of the townspeople. This restores the flow between the two. People are reunited with their lost letters, and the vibe improves. This resolves the arcs of the mayor, stargazer (who finally learns the truth about the magic), and the mole man, who is reunited with the townspeople and is satisfied by the restored health of the magic.</tw-passagedata><tw-passagedata pid="23" name="Things to Add" tags="" position="200,1700" size="100,100">Other Characters to Add
+-&gt; In finding him, you convince him to open a pathway to the town, thus restoring the connection of the town with the magic underground and allowing it to be fed naturally by the emotions of the townspeople. This restores the flow between the two. People are reunited with their lost letters, and the vibe improves. This resolves the arcs of the mayor, stargazer (who finally learns the truth about the magic), and the mole man, who is reunited with the townspeople and is satisfied by the restored health of the magic.
+
+
+[[Return -&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="20" name="Things to Add" tags="" position="200,1700" size="100,100">Other Characters to Add
 
 City Council Potluck
 
@@ -219,13 +244,25 @@ Decoupage
 Emergency landing plane
 College student at the state college with shaky grades and a citation for underage drinking writing home
 Failed (but trying) homesteaders
-Guy with tractor underglow</tw-passagedata><tw-passagedata pid="24" name="Welcome!" tags="" position="200,1600" size="100,100">Welcome! This is an organizer for the narrative of MAIL CARRIER! 
+Guy with tractor underglow
 
-Navigation below.
 
-[[Town]]
+[[Return-&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="21" name="Welcome!" tags="" position="200,1600" size="100,100">Welcome! This is an organizer for the narrative of MAIL CARRIER! 
+
+Navigate below to the narrative and locations of the game, or skip to the ToDo list.
+
+
+[[Locations]]
+[[General Narrative]] 
+
+
 [[Things to Add]] 
-[[General Narrative]] </tw-passagedata><tw-passagedata pid="25" name="Mission7" tags="" position="1600,1800" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="Mission8" tags="" position="1800,1800" size="100,100"></tw-passagedata><tw-passagedata pid="27" name="Mission9" tags="" position="2000,1800" size="100,100"></tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="22" name="Mission7" tags="" position="1600,1800" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Mission8" tags="" position="1800,1800" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Mission9" tags="" position="2000,1800" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Locations" tags="" position="200,1900" size="100,100">[[Town]]
+[[Mountain]] 
+[[Underground]] 
+
+
+[[Return-&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="26" name="Mission2" tags="" position="600,1800" size="100,100"></tw-passagedata><tw-passagedata pid="27" name="Mission3" tags="" position="800,1800" size="100,100"></tw-passagedata><tw-passagedata pid="28" name=" Mission1" tags="" position="400,1800" size="100,100">[[Return-&gt;Town]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
