@@ -88,11 +88,30 @@ tw-passage p:empty {
   display: none !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+/* Font */
+tw-passage {
+  font-family: 'Your Font Name', sans-serif;
+  font-size: 20px; /* Optional: Adjusts text size */
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Underground" tags="" position="1800,700" size="100,100">&#39;&#39;Underground&#39;&#39;
 
 * Final zone of the game. Home of the Mole Man.
+* Underground Nokron-esque ruins
+* Bunker? Government labs? 
+* Cobwebs. Spooky.
+* We move through different layers of history
+** Abandoned mining gear
+*** Cart tracks, rocks, dynamite, etc.
+** Government bunkers, Cold War era labs and science equipment. A little dark, a little CIA
+*** Under that, the ruins of an ancient, nameless society—mole man has not decended this far, he lives in the bunkers
+* No central hub: Moleman builds tunnels for you after each mission to access earlier areas.
 
 Locations:
+
+[[Mines]]
+[[Bunker]]
+[[Ruins]]
 
 ----
 
@@ -120,10 +139,15 @@ Navigation:
 [[Start-&gt;Welcome!]]</tw-passagedata><tw-passagedata pid="2" name="Mountain" tags="" position="1200,700" size="100,100">&#39;&#39;Mountain&#39;&#39;
 
 * Second Zone of the game. Home of the Stargazer. 
+* Empty Castle
+* Ski Cabin lodge
+* Mountain Climbing
 
 Locations:
 
 [[Stargazer&#39;s House]]
+[[Castle]]
+[[Ski Lodge]]
 
 ----
 
@@ -148,7 +172,18 @@ Navigation:
 
 ----
 
-[[Start-&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="3" name="Mission4" tags="" position="1000,900" size="100,100">[[Return-&gt;Mountain]]</tw-passagedata><tw-passagedata pid="4" name="Mission5" tags="" position="1200,900" size="100,100">[[Return-&gt;Mountain]]</tw-passagedata><tw-passagedata pid="5" name="Mission6" tags="" position="1400,900" size="100,100">[[Return-&gt;Mountain]]</tw-passagedata><tw-passagedata pid="6" name="Post Office" tags="" position="400,500" size="100,100">Boss Bird is here. 
+[[Start-&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="3" name="Mission4" tags="" position="1000,900" size="100,100">Location: Mountains, Snow Vibes
+
+
+
+[[Return-&gt;Mountain]]</tw-passagedata><tw-passagedata pid="4" name="Mission5" tags="" position="1200,900" size="100,100">Location: Ski Lodge
+
+
+
+[[Return-&gt;Mountain]]</tw-passagedata><tw-passagedata pid="5" name="Mission6" tags="" position="1400,900" size="100,100">Location: Castle, heading to Underground
+
+
+[[Return-&gt;Mountain]]</tw-passagedata><tw-passagedata pid="6" name="Post Office" tags="" position="400,500" size="100,100">Boss Bird is here. 
 
 
 [[Secretary Desk]]
@@ -178,7 +213,7 @@ Accessible at the start of the game.
 * Thinks letters are getting lost
 * In tune with her emotions
 * Tranquil and grounded but kind and loving 
-* OLD, ties together the generations of the town
+* Aged, ties together the generations of the town
 * Symbol of the state of the town
 * The character that has the longtime parter
 * Lesbian
@@ -206,7 +241,7 @@ Accessible at the start of the game.
 
 
 [[Return-&gt;Mountain]] 
-</tw-passagedata><tw-passagedata pid="13" name="Mole Man" tags="" position="1800,500" size="100,100">Mole Man
+</tw-passagedata><tw-passagedata pid="13" name="Mole Man" tags="" position="2000,500" size="100,100">Mole Man
 
 * Tutorial character (gives detailed hints on movement after Boss Bird gives the general overview)
 * Sees the world in the same way you do (highly imaginative)
@@ -217,8 +252,8 @@ Accessible at the start of the game.
 * Talks with the Scientist about Theories. Disagrees with him. 
 * Is a Mole (With a little helmet) 
 * Is convinced that only he can protect the magic of the town, forgotten by everyone else. 
-* Steals letters from the townsfolk and stashes them underground near the source of the magic.
-
+* Steals letters from the townsfolk and stashes them underground close to the source of the magic.
+* Has moved in to the vast structures underground—we see rooms and rooms of horded mail, packages, and desks full of junk. 
 
 [[Underground]] </tw-passagedata><tw-passagedata pid="14" name="Shop" tags="" position="400,300" size="100,100">Can aquire cosmetics here.
 
@@ -230,10 +265,14 @@ Accessible at the start of the game.
 ** This is a long-standing issue.
 
 [[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="16" name="Post Office Assistant" tags="" position="700,200" size="100,100">* Secretary at the post office. Is a bird.
+* Pidgeon
+* A little anxious
 
 [[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="17" name="Official Master of Views" tags="" position="700,300" size="100,100">* Can be encountered throughout the levels looking at the scenery. 
 * Offers dialogue about the town or environments. 
 * They document the declining magic of the town
+* Somehow they show up in places seemingly impossible to reach.
+* Easter Egg character, gives rewards for finding him, plus lore information
 
 [[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="18" name="General Narrative" tags="" position="200,900" size="100,100">* You are a relatively new hire mail carrier in a small ex-logging town. 
 * The vibes of the town are bad. The mayor notices things aren’t like they used to be. People are feeling bad and depressed. 
@@ -249,7 +288,7 @@ Accessible at the start of the game.
 [[Return -&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="19" name="Things to Add" tags="" position="200,800" size="100,100">Other Characters to Add:
 
 * Failed (but trying) rural livers
-* Guy with ATV underglow
+* Hippie living out in the woods who claims to be drawn to this place
 * College student at the state college with shaky grades and a citation for underage drinking writing home
 
 
@@ -257,14 +296,13 @@ Accessible at the start of the game.
 
 Items to add:
 
-* City Council Potluck
-* Decoupage
-* Emergency landing plane
+* City Council Meeting that we can sit in on
+* Crashed plane 
 
 
 [[Return-&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="20" name="Welcome!" tags="" position="200,700" size="100,100">Welcome! This is an organizer for the narrative of MAIL CARRIER! 
 
-Navigate below to the narrative and locations of the game, or skip to the ToDo list.
+Navigate below to the narrative and locations of the game, or skip to Things to Add.
 
 
 [[Locations]]
@@ -273,20 +311,54 @@ Navigate below to the narrative and locations of the game, or skip to the ToDo l
 
 
 [[Things to Add]] 
-</tw-passagedata><tw-passagedata pid="21" name="Mission7" tags="" position="1600,900" size="100,100">[[Return-&gt;Underground]]</tw-passagedata><tw-passagedata pid="22" name="Mission8" tags="" position="1800,900" size="100,100">[[Return-&gt;Underground]]</tw-passagedata><tw-passagedata pid="23" name="Mission9" tags="" position="2000,900" size="100,100">[[Return-&gt;Underground]]</tw-passagedata><tw-passagedata pid="24" name="Locations" tags="" position="200,1000" size="100,100">Choose.
+</tw-passagedata><tw-passagedata pid="21" name="Mission7" tags="" position="1600,900" size="100,100">Location: Mines
+
+
+
+[[Return-&gt;Underground]]</tw-passagedata><tw-passagedata pid="22" name="Mission8" tags="" position="1800,900" size="100,100">Location: Bunker
+
+
+
+[[Return-&gt;Underground]]</tw-passagedata><tw-passagedata pid="23" name="Mission9" tags="" position="2000,900" size="100,100">Location: Ruins, transitioning to Town
+
+
+
+[[Return-&gt;Underground]]</tw-passagedata><tw-passagedata pid="24" name="Locations" tags="" position="200,1000" size="100,100">Choose.
 
 [[Town]]
 [[Mountain]] 
 [[Underground]] 
 
 
-[[Return-&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="25" name="Mission2" tags="" position="600,900" size="100,100">You need to deliver multiple letters throughout the level.
+[[Return-&gt;Welcome!]] </tw-passagedata><tw-passagedata pid="25" name="Mission2" tags="" position="600,900" size="100,100">&#39;&#39;Research the Mystery&#39;&#39;
+
+Location: Town
+
+From the town center, we have to deliver the wife&#39;s letter to the librarian.
+
+Letter:
+[...]
 
 
 
-[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="26" name="Mission3" tags="" position="800,900" size="100,100">[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="27" name=" Mission1" tags="" position="400,900" size="100,100">This mission has you venturing out into the forrest to deliver a letter.
 
-You&#39;re delivering to a random forest animal — mouse?
+
+[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="26" name="Mission3" tags="" position="800,900" size="100,100">&#39;&#39;Find the Stargazer&#39;&#39;
+
+Location: Forest, transition to Mountains
+
+
+
+[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="27" name="Mission1" tags="" position="400,900" size="100,100">&#39;&#39;Deliver Letter to Mayor&#39;s Wife&#39;&#39;
+
+Location: Forest
+
+After the tutorial, the mayor gives you a letter to deliver to her wife which is much more personal and more open about her feelings on the town&#39;s plight. It takes us up into the hills outside town to her mountain home.
+
+Letter:
+[...]
+
+After we deliver the letter, mayor&#39;s wife gives us a lead—asks us to visit a library and look into the history of the town
 
 
 
@@ -306,6 +378,20 @@ You&#39;re delivering to a random forest animal — mouse?
 ** They are the ones that maintain the town’s older infrastructure.
 * Nowadays, the town has a small population. People have stopped moving in, except for rare edge cases. These edge cases are explored in detail through the letters, where we learn people’s circumstances and why they’d move their lives out here.
 
+Terrain details: 
+
+* Random stone/brick structures encountered in the woods allude to a history of struggle with nature
+** Isolated arches
+** Abandoned railway tracks
+** Trestle bridges 
+** Wood/fence post trail borders
+** Concrete stairs ascending nowhere
+* Warning signs 
+* Rusted trash
+** Barrels
+** Car chassis covered in grass
+* Tall trees
+
 ----
 
 Characters:
@@ -314,7 +400,8 @@ Characters:
 [[Boss Bird]]
 [[Post Office Assistant]]
 [[Official Master of Views]]
-[[Guy with ATV underglow]]
+[[Guy with Lit RV]]
+[[Librarian]]
 
 ----
 
@@ -324,14 +411,23 @@ Locations:
 [[City Hall]]
 [[Shop]]
 [[Forest]]
+[[Fishing Shack]]
 
 ----
 
 Missions:
 
-[[Mission 1: Forest -&gt; Mission1]]
-[[Mission2]]
-[[Mission3]]
+[[Mission 1: Deliver Letter to Mayor Wife -&gt;Mission1]]
+[[Mission 2: Research the Mystery -&gt;Mission2]]
+[[Mission 3: -&gt;Mission3]]
+
+----
+
+Side Missions: 
+
+[[Forest Run -&gt;SideMission1]]
+[[By the Lake -&gt;SideMission2]]
+[[Explore Logging Ruins -&gt;SideMission3]]
 
 ----
 
@@ -369,14 +465,31 @@ Navigation:
 
 
 
-[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="31" name="Guy with ATV underglow" tags="" position="700,100" size="100,100">* Lives in the forest near a trailhead. 
-* Takes the ATV w/ blue underglow out for runs down the dirt trails most days. 
-** Invites you to join sometime. 
-* Really, really loves the underglow, is oblivious to any embarrassment.
+[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="31" name="Guy with Lit RV" tags="" position="700,100" size="100,100">* Lives in the forest near a trailhead. 
+* Lives in a 1960s RV covered in christmas string lights
+** Invites you to hang sometime.
+* Really, really loves the lights, is oblivious to any embarrassment.
 
 
 
-[[Return-&gt;Town]] </tw-passagedata></tw-storydata>
+[[Return-&gt;Town]] </tw-passagedata><tw-passagedata pid="32" name="Fishing Shack" tags="" position="400,100" size="100,100">* Small lakeside floating shack that allows for fishing minigame.
+* Unlocked after completing the second mission.
+* Inhabited by a veteran fisher 
+** Kingfisher? IdK
+
+[[Return -&gt;Town]]</tw-passagedata><tw-passagedata pid="33" name="SideMission1" tags="" position="400,1100" size="100,100">&#39;&#39;Forest Mail Run&#39;&#39;
+
+This mission has you venturing out into the forrest to deliver letters. Along the way you encounter various townspeople living in their rural homes.
+
+You&#39;re delivering to random forest animals — mouse, bear, snail, toad. They give you little filler dialogue as you deliver them mail.</tw-passagedata><tw-passagedata pid="34" name="SideMission2" tags="" position="600,1100" size="100,100">&#39;&#39;By the Lake&#39;&#39;
+
+You need to deliver a letter to a small fishing shack on the edge of the town near the lake. We encounter a few watery townspeople. The final desination is a fishing shack where we can return to later to fish.
+
+
+
+[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="35" name="SideMission3" tags="" position="800,1100" size="100,100">Old logging equipment in the woods.
+
+[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="36" name="Librarian" tags="" position="700,0" size="100,100">[[Return-&gt;Town]]</tw-passagedata><tw-passagedata pid="37" name="Castle" tags="" position="1000,400" size="100,100">[[Return-&gt;Mountain]]</tw-passagedata><tw-passagedata pid="38" name="Ski Lodge" tags="" position="1000,300" size="100,100">[[Return-&gt;Mountain]]</tw-passagedata><tw-passagedata pid="39" name="Mines" tags="" position="1600,400" size="100,100">[[Return-&gt;Underground]]</tw-passagedata><tw-passagedata pid="40" name="Bunker" tags="" position="1600,300" size="100,100">[[Return-&gt;Underground]]</tw-passagedata><tw-passagedata pid="41" name="Ruins" tags="" position="1600,500" size="100,100">[[Return-&gt;Underground]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
